@@ -1,5 +1,10 @@
 package OCP_VIOLACAO;
 
+/**
+ * Aqui foi criado todos as variaveis e metodo construtor
+ * @author Daniel Müller
+ * @version 1.0
+ * */
 public class Pedido {
     private String id;
     private double valorBruto;
@@ -8,6 +13,9 @@ public class Pedido {
     private String emailCliente;
     private TipoDesconto tipoDesconto; // Tipo de desconto a ser aplicado
 
+    /**
+     * Metodo construtor
+     * */
     public Pedido(String id, double valorBruto, int quantidadeItens, String emailCliente, TipoDesconto tipoDesconto) {
         this.id = id;
         this.valorBruto = valorBruto;
@@ -17,7 +25,9 @@ public class Pedido {
         this.tipoDesconto = tipoDesconto;
     }
 
-    // --- GETTERS ---
+    /**
+     * GETTERS
+     * */
     public String getId() { return id; }
     public double getValorBruto() { return valorBruto; }
     public int getQuantidadeItens() { return quantidadeItens; }
@@ -25,7 +35,9 @@ public class Pedido {
     public String getEmailCliente() { return emailCliente; }
     public TipoDesconto getTipoDesconto() { return tipoDesconto; }
 
-    // --- SETTERS ---
+    /**
+     * SETTERS
+     * */
     public void setValorBruto(double valorBruto) { this.valorBruto = valorBruto; }
     public void setQuantidadeItens(int quantidadeItens) { this.quantidadeItens = quantidadeItens; }
     public void setPago(boolean pago) { isPago = pago; }
