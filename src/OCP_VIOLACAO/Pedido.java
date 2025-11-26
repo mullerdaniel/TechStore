@@ -8,9 +8,7 @@ public class Pedido {
     private String emailCliente;
     private TipoDesconto tipoDesconto; // Tipo de desconto a ser aplicado
 
-
-    public Pedido(String id, double valorBruto, int quantidadeItens, String
-            emailCliente, TipoDesconto tipoDesconto) {
+    public Pedido(String id, double valorBruto, int quantidadeItens, String emailCliente, TipoDesconto tipoDesconto) {
         this.id = id;
         this.valorBruto = valorBruto;
         this.quantidadeItens = quantidadeItens;
@@ -29,15 +27,8 @@ public class Pedido {
 
     // --- SETTERS ---
     public void setValorBruto(double valorBruto) { this.valorBruto = valorBruto; }
-    public void setQuantidadeItens(int quantidadeItens) { this.quantidadeItens =
-            quantidadeItens; }
+    public void setQuantidadeItens(int quantidadeItens) { this.quantidadeItens = quantidadeItens; }
     public void setPago(boolean pago) { isPago = pago; }
-    public void setTipoDesconto(TipoDesconto tipoDesconto) { this.tipoDesconto =
-            tipoDesconto; }
+    public void setTipoDesconto(TipoDesconto tipoDesconto) { this.tipoDesconto = tipoDesconto; }
 }
-
-    // Enum para Tipos de Desconto
-    enum TipoDesconto {
-      CUPOM, VIP, SAZONAL, ANIVERSARIO // ANIVERSARIO é o novo desconto que causará a modificação
-    }
 
